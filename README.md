@@ -26,7 +26,25 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## The Big Picture
+
+AJAX (BACKGROUND)         -  -  ->  |
+                                    |
+                                    ^
+                                Request
+    CLIENT    ---------------------------------------------->     SERVER
+              <----------------------------------------------
+                              Response
+                            _________________      
+                            |     DATA       |              
+  - BROWSER                 |________________|                  - Businees Logic
+                            |    JSON FORMAT |          
+  - AngularJS               |________________|                  - Persistant Data 
+  - Presentation                                                  Storage
+  - UI                                                                
+  - Single page Apllication <--Single Page is not necessarily   - Authentication
+                                 served by NODEJS
 
 
+## Installtion NodeJS and other 
 
-## 
